@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[ProductionLogs]
+(
+	[LogID] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[BatchID] INT NOT NULL,
+	[Message] NVARCHAR(MAX) NOT NULL,
+	[LogTime] DATETIME2 NOT NULL DEFAULT GETDATE(),
+	CONSTRAINT [FK_ProductionLogs_SteelBatches] FOREIGN KEY ([BatchID]) REFERENCES [SteelBatches]([BatchID])
+)

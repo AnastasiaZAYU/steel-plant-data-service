@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[SteelBatches]
+(
+	[BatchID] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[GradeID] INT NOT NULL,
+	[StartTime] DATETIME2 NOT NULL DEFAULT GETDATE(),
+	[WeightKG] DECIMAL(10, 2) NULL,
+	[Status] NVARCHAR(20) NOT NULL DEFAULT 'InProgress',
+	CONSTRAINT [FK_SteelBatches_SteelGrades] FOREIGN KEY ([GradeID]) REFERENCES [SteelGrades]([GradeID])
+)

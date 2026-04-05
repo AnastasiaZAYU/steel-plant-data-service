@@ -57,4 +57,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="SteelGrades.sql" />
+    <Build Include="SteelBatches.sql" />
+    <Build Include="ProductionLogs.sql" />
+  </ItemGroup>
 </Project>
