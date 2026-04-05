@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/SteelPlant.ConsoleApp/SteelPlant.ConsoleApp.csproj" Id="36f01054-f3b6-489c-b2f0-e2564d77f768" />
+  <Project Path="src/SteelPlant.Database/SteelPlant.Database.sqlproj" Id="fa67081e-4b27-4258-ba5f-a13c83e3131b">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
